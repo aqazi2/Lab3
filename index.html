@@ -85,7 +85,7 @@
         });
         // Add tooltips to display attribute information
         var tooltipContent = '<b>' + feature.properties.community + '</b><br>' +
-            'Population Density: ' + feature.properties.PopDen + ' people/unit';
+            'Population Density: ' + feature.properties.PopDen + ' people/square kilometer';
         layer.bindTooltip(tooltipContent);
     }
 
@@ -102,7 +102,7 @@
         var div = L.DomUtil.create('div', 'legend'),
             grades = [369 , 1847, 3852, 5368, 8257, 12557];
 
-        div.innerHTML = '<b>Population Density <br>  <br></b>';
+        div.innerHTML = '<b>Population Density 2010 <br>  <br></b>';
 
         for (var i = 0; i < grades.length; i++) {
             div.innerHTML +=
